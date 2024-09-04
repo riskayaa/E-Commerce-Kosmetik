@@ -365,4 +365,33 @@ box-sizing: border-box;
        width: 100%;
        margin-top: 10px;
     }
+      
+    .kontenkategori{
+      justify-content: center;
+    }
+
+    .fashion{
+        flex-wrap: wrap;
+    }
+
+    .fashion .card{
+       width: 100%;
+    }
+
+    .blog{
+       flex-wrap: wrap;
+    }
+
+    .blog .card{
+      margin-top: 30px;
+    }
+
+  footer{
+    flex-wrap: wrap;
+  }
+
+  footer .card{
+    margin-top: 20px;
+    width: 50%;
+  }
   }

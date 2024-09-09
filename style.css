@@ -336,7 +336,7 @@ box-sizing: border-box;
      list-style: none;
   }
 .banner{
-     background-image: url(assets/img/hero.png);
+     background-image: url(hero.png);
     height:300PX;
     background-size: cover;
     background-repeat: no-repeat;

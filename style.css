@@ -335,6 +335,66 @@ box-sizing: border-box;
      margin-top: 20px;
      list-style: none;
   }
+.banner{
+     background-image: url(assets/img/hero.png);
+    height:300PX;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9%;
+    text-align: center;
+    position: relative;
+  }
+
+  .banner::after{
+       content:'';
+       position: absolute;
+       top: 0;
+       left: 0;
+       width: 100%;
+       background-color: rgba(0,0,0,.5);
+       height: 100%;
+
+  }
+
+  .details{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 5%;
+  }
+
+  .detailsimage,
+  .detailstext{
+     width: 48%;
+  }
+
+  .detailsimage img{
+     width: 100%;
+  }
+
+  .detailstext p{
+    margin-top: 10px;
+  }
+
+  .detailstext input{
+     padding: 10px 20px;
+     margin-top: 10px;
+     border: 1px solid gray;
+     outline: none;
+  }
+
+  .detailstext button{
+     padding: 10px 20px;
+     border-radius: 30px;
+     background-color: brown;
+     border: none;
+     cursor: pointer;
+  }
+
   
   @media (max-width:480px) {
     .navigation,
@@ -393,5 +453,17 @@ box-sizing: border-box;
   footer .card{
     margin-top: 20px;
     width: 50%;
+  }
+      .details{
+     flex-wrap: wrap;
+  }
+
+  .detailsimage,
+  .detailstext{
+    width: 100%;
+  }
+
+  .detailstext{
+    margin-top: 40px;
   }
   }
